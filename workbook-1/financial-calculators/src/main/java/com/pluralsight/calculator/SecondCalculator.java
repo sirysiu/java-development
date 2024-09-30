@@ -13,19 +13,24 @@ public class SecondCalculator {
 
         System.out.println("Enter your deposit Here: ");
         deposit = calculatorScanner.nextFloat();
-        calculatorScanner.nextLine();
+
 
         System.out.println("Enter your Interest Rate Here: ");
-        interestRate = calculatorScanner.nextFloat();
-        calculatorScanner.nextLine();
+        interestRate = calculatorScanner.nextFloat() / 100 ;
+
 
         System.out.println("Enter your Years Here: ");
         numOfYears = calculatorScanner.nextInt();
-        calculatorScanner.nextLine();
 
-        double simpleInterest = Math.pow(1 + interestRate, numOfYears);
 
-        System.out.println("Simple Interest: " + simpleInterest);
+
+
+
+        double simpleInterest = deposit * (Math.pow(1 + interestRate, numOfYears));
+        double totalInterest = (simpleInterest - deposit);
+
+        System.out.println("Your CD Balance is: " + simpleInterest);
+        System.out.println("You would have earn: " + totalInterest);
 
         calculatorScanner.close();
 
