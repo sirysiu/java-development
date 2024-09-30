@@ -22,12 +22,13 @@ public class ThirdCalculator {
         System.out.println("Enter your Years Here: ");
         numOfYears = calculatorScanner.nextInt();
 
+        double r = interestRate/12;
+        double n = - numOfYears * 12;
+        double numerator = 1 - Math.pow(1 + r, n);
+        double presentValue = payout * 12;
+        double annuity = presentValue * (numerator/interestRate);
 
-        double numerator = 1 - Math.pow(1 + interestRate, -numOfYears);
-        double yearAmount = payout * 12;
-        double annuity = yearAmount * (numerator/interestRate);
-
-        System.out.println("The annuity is: " + annuity);
+        System.out.println("The Present Value is: " + annuity);
         calculatorScanner.close();
     }
 

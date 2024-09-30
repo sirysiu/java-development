@@ -22,14 +22,12 @@ public class SecondCalculator {
         System.out.println("Enter your Years Here: ");
         numOfYears = calculatorScanner.nextInt();
 
+        double a = 1 + interestRate/365;
+        double b = 365 * numOfYears;
+        double future = deposit * (Math.pow(a,b));
+        double totalInterest = (future - deposit);
 
-
-
-
-        double simpleInterest = deposit * (Math.pow(1 + interestRate, numOfYears));
-        double totalInterest = (simpleInterest - deposit);
-
-        System.out.println("Your CD Balance is: " + simpleInterest);
+        System.out.println("Your CD Balance is: " + future);
         System.out.println("You would have earn: " + totalInterest);
 
         calculatorScanner.close();
