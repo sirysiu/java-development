@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class ThirdCalculator {
 
-    public static void main(String[] args) {
+    public void thirdInput() {
         double payout = 0.0;
         double interestRate = 0.0;
         int numOfYears = 0;

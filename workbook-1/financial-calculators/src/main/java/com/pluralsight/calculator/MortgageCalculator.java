@@ -5,14 +5,14 @@ public class MortgageCalculator {
 
 
 
-    public static void main(String[] args) {
+    public void input() {
 
-        double principle = 0.0;
+        double principle = 0;
         double interestRate = 0.0;
         int loanLength = 0;
 
-
         Scanner calculatorScanner = new Scanner(System.in);
+
 
         System.out.println("Enter your Principle Here: ");
         principle = calculatorScanner.nextDouble();

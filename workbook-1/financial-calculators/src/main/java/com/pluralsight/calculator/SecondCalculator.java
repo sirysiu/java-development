@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class SecondCalculator {
 
-    public static void main(String[] args) {
+    public void secondInput() {
         float deposit = 0.0F;
         float interestRate = 0.0f;
         int numOfYears = 0;
