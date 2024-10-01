@@ -33,8 +33,8 @@ public class MortgageCalculator {
         double amountTotal = (payment * months);
         double amount = (amountTotal - principle);
 
-        System.out.println("Your monthly payment is: " + payment);
-        System.out.println("Total Interest paid: " + amount);
+        System.out.printf("Your monthly payment is: " + "%.2f\n", payment);
+        System.out.printf("Total Interest paid: " + "%.2f\n", amount);
 
         calculatorScanner.close();
     }

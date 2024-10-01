@@ -27,8 +27,8 @@ public class SecondCalculator {
         double future = deposit * (Math.pow(a,b));
         double totalInterest = (future - deposit);
 
-        System.out.println("Your CD Balance is: " + future);
-        System.out.println("You would have earn: " + totalInterest);
+        System.out.printf("Your CD Balance is: " + "%.2f\n", future);
+        System.out.printf("You would have earn: " + "%.2f\n", totalInterest);
 
         calculatorScanner.close();
 

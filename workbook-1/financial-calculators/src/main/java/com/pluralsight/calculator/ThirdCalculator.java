@@ -28,7 +28,7 @@ public class ThirdCalculator {
         //double presentValue = payout * 12;
         double annuity = payout * (numerator / r);
 
-        System.out.println("The Present Value is: " + annuity);
+        System.out.printf("The Present Value is: " + "%.2f\n", annuity);
         calculatorScanner.close();
     }
 
